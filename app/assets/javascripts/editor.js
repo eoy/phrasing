@@ -235,9 +235,6 @@ var editor = (function() {
   function onShyClick() {
     var nodeNames = findNodes( window.getSelection().focusNode );
     var caretPos = window.getSelection().getRangeAt(0);
-    console.log(caretPos);
-    console.log(window.getSelection());
-    // document.execCommand( 'shy', false );
     document.execCommand( 'insertHTML', false, window.getSelection() + "<i class='shy'>&shy;</i>");
   }
 

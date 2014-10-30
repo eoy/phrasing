@@ -33,6 +33,19 @@
 		}
 	}
 
+  i.shy {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+    &:after {
+      content: '•';
+      font-size: 0.8em;
+      opacity: 0.8;
+      text-decoration: none;
+      font-style: normal;
+    }
+  }
+
 }
 
 /*blockquote {
@@ -248,17 +261,4 @@ span.no-overflow {
 
 .url {
 	-webkit-font-smoothing: antialiased;
-}
-
-.phrasable_on i.shy {
-  display: inline-block;
-  position: relative;
-  text-decoration: none;
-  &:after {
-    content: '•';
-    font-size: 0.8em;
-    opacity: 0.8;
-    text-decoration: none;
-    font-style: normal;
-  }
 }
